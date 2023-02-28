@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./images/logo.png" class="logo" alt="" />
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="./images/menu.png" alt="" class="menu" onclick="togglemenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            Let's play <br />
+            Without limit
+          </h2>
+          <h3>Play games with your friends and family</h3>
+          <p>(Compatible/Generic)</p>
+          <h4>$49.42</h4>
+          <button type="button">
+            Buy Now <img src="./images/arrow.png" alt="" />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="./images/controller.png" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="./images/add.png" />
+            <p><small>Add to card</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <img src="./images/fb.png">
+        <img src="./images/ig.png">
+        <img src="./images/tw.png">
+      </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function togglemenu(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "130px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+  </body>
+</html>
